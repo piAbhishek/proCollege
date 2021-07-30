@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Events"
+    android:background="#BEFFF9">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EVENTS of CIT,Koj"
+                android:textStyle="bold|italic"
+                android:textSize="25dp"
+                android:textColor="#FFFFFF"
+                android:background="@color/black"/>
+
+            <ImageView
+                android:layout_width="107dp"
+                android:layout_height="131dp"
+                android:src="@drawable/citlogo"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="150dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ECSTASY"
+                android:layout_marginTop="50dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:text="Hello There!
+Ecstasy is the annual cultural fest of Central Institute of Technology, Kokrajhar, Assam. Being one of the largest cultural fest in entire lower Assam which witnessed various national and international artists. Spread over 3 days and 3 nights, Every year it is conducted at the end of February. Ecstasy has over 40 competitions."
+                android:textColor="@color/black"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ecstasy" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TECHCRACY"
+                android:layout_marginTop="50dp"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="CIT Kokrajhar’s annual technical fest Techcracy is organized every year which promises to be a perfect fusion of innovative ideas and enthusiasm. Extending one’s limit out of boundary one can express themselves. Starting from competition to workshops it includes many more events. Youth get a chance to motivate themselves through lecture series by high voltage appearances across India. Discover yourself through literary events and with world class photography in photography challenge. Bring out your concept in the form of hilarious models in model display competition like Jouga and Du-Fang etc."
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_marginRight="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="990dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/tech1" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

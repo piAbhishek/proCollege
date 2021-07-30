@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlliedEngineering"
+    android:background="#BEFFF9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Allied Engineering"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:background="#54FE7D"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dept_ee"
+                android:text="1. Electrical Engineering"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deptee_about"
+                android:text="About"
+                android:layout_below="@+id/dept_ee"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deptcse_description"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/deptee_about"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Electrical Engineering department in CIT is providing the basic electrical courses to diploma and degree students of other departments. It is well known that roots of Computer Science, Instrumentation and Electronics are very much linked to Electrical Engineering. So the fundamental knowledge of Electrical Engineering is very important.
+The department has one Basic Electronic Laboratory and this laboratory is well-equipped. Student have the opportunity to learn many practical things related to Electrical Engineering in this lab. Electrical Machine Laboratory is also being built and both AC and DC types of machines would be installed."/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ee_people"
+                android:layout_below="@+id/deptcse_description"
+                android:text="People"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dept_me"
+                android:layout_below="@+id/ee_people"
+                android:text="2. Mechanical Engineering"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deptme_about"
+                android:text="About"
+                android:layout_below="@+id/dept_me"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/deptme_description"
+                android:layout_marginLeft="30dp"
+                android:layout_below="@+id/deptme_about"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="The Mechanical Department of Central Institute of Technology (CIT) is an allied branch and conducts academic activities for both Diploma and Degree students. The department has one laboratory to conduct practical classes for various courses on circuits and networks theory and one mechanical workshop. In any Engineering, some subjects are there which are very essential and compulsory for all engineering branches like Engineering Mechanics, Workshop Practice, Basic Thermodynamics, Basic fluid Mechanics etc. are run by Mechanical Engineering. Under this department there is a well-equipped Workshop which is composed of mainly several shops as-Carpentry Shop, Fitting Shop, Welding Shop and Machine shop. The Machine Shop is consists of several heavy and light machines like Lathe , shaper , slotter, drilling machine, hydraulic hacksaw, grinding machine etc. Along with the mechanical workshop the mechanical department has engineering mechanics lab to conduct practical class for both diploma and degree students. The department has taken steps to develop labs both existing and new one"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/me_people"
+                android:layout_below="@+id/deptme_description"
+                android:text="People"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

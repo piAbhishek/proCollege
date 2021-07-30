@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutActivity"
+    android:background="#BEFFF9">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/aboutspace"
+                android:text="About Space..."
+                android:textSize="30sp"
+                android:textColor="@color/black"
+                android:textStyle="bold|italic"
+                android:background="#54FE7D"/>
+
+            <ImageView
+                android:layout_width="337dp"
+                android:layout_height="657dp"
+                android:layout_below="@+id/aboutspace"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/citabout1" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cit_id"
+                android:text="CIT"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/department_id"
+                android:layout_below="@+id/cit_id"
+                android:text="Departments"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tpcell"
+                android:layout_below="@+id/department_id"
+                android:text="T and P Cell"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/alumni"
+                android:layout_below="@+id/tpcell"
+                android:text="Alumni"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/admission_id"
+                android:layout_below="@+id/alumni"
+                android:text="Admissions"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/faq"
+                android:layout_below="@+id/admission_id"
+                android:text="FAQs"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"/>
+        </RelativeLayout>
+    </ScrollView>/
+
+</RelativeLayout>

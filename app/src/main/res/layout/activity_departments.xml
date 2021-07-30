@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Departments"
+    android:background="#BEFFF9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/department_heading"
+                android:background="#54FE7D"
+                android:text="Departments"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                android:textStyle="bold|italic" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="322dp"
+                android:id="@+id/department_coloumn"
+                android:layout_below="@+id/department_heading"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="0dp"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/departmentcoloumn" />
+
+            <Button
+                android:id="@+id/core_engineering"
+                android:layout_width="191dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/department_coloumn"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Core Engineering"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textSize="10sp"/>
+
+            <Button
+                android:id="@+id/design"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/department_coloumn"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="20dp"
+                android:layout_toRightOf="@+id/core_engineering"
+                android:text="Design"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/allied_engineering"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/core_engineering"
+                android:text="Allied Engineering"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textSize="10sp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/basic_sciences"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/design"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/allied_engineering"
+                android:text="Basic Sciences"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

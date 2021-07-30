@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterActivity"
+    android:background="#BEFFF9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/cit_heading"
+                android:text="Central Institute Of Technology"
+                android:textSize="20dp"
+                android:textColor="@color/purple_700"
+                android:textStyle="bold|italic"
+                android:background="#54FE7D"
+                tools:ignore="InvalidId" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/subHeading"
+                android:layout_below="@+id/address"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Welcome Back"
+                android:gravity="center_horizontal" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/address"
+                android:layout_below="@+id/cit_heading"
+                android:text="Kokrajhar"
+                android:textStyle="bold|italic"
+                android:textColor="@color/purple_700"
+                android:textSize="20dp"
+                android:background="#54FE7D"
+                android:layout_marginBottom="20dp"/>
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/subHeading"
+                android:text="UserName"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="25sp"/>
+
+            <ImageView
+                android:id="@+id/cit_logo_login"
+                android:layout_width="117dp"
+                android:layout_height="151dp"
+                android:layout_below="@+id/userName"
+                android:layout_marginLeft="140dp"
+                android:src="@drawable/citlogo"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_id"
+                android:layout_below="@id/cit_logo_login"
+                android:text="About"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/portal_id"
+                android:layout_below="@id/about_id"
+                android:text="CIT PORTAL"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/academic_id"
+                android:layout_below="@id/portal_id"
+                android:text="ACADEMICS"
+                android:layout_marginTop="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"/>
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/academic_id"
+                android:text="LogOut"
+                android:textAllCaps="false"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="120dp"
+                android:layout_marginEnd="120dp"
+               android:layout_marginTop="50dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

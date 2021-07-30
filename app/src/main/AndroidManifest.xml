@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.procollege">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Meta data for your file for server url -->
+    <meta-data
+        android:name="com.parse.SERVER_URL"
+        android:value="@string/back4app_server_url" /> <!-- Meta data for your file for application id -->
+    <meta-data
+        android:name="com.parse.APPLICATION_ID"
+        android:value="@string/back4app_app_id" /> <!-- Meta data for your file for client key -->
+    <meta-data
+        android:name="com.parse.CLIENT_KEY"
+        android:value="@string/back4app_client_key" />
+
+    <application
+        android:name=".proCollege"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProCollege"
+        tools:ignore="MissingClass">
+        <activity android:name=".Timetable"></activity>
+        <activity android:name=".Question_Paper" />
+        <activity android:name=".notice" />
+        <activity android:name=".fet_staff" />
+        <activity android:name=".ie_staff" />
+        <activity android:name=".civil_staff" />
+        <activity android:name=".ece_staff" />
+        <activity android:name=".it_staff" />
+        <activity android:name=".Cse_staff" />
+        <activity android:name=".Syllabus" />
+        <!--
+        <activity android:name=".Subjects_final"></activity>
+        <activity android:name=".Subjects" />
+        <activity android:name=".TimeTable" />
+        -->
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".PortalActivity" />
+        <activity android:name=".Events" />
+        <activity android:name=".EnterActivity" />
+        <activity android:name=".Design" />
+        <activity android:name=".Departments" />
+        <activity android:name=".CoreEngineering" />
+        <activity android:name=".CIT" />
+        <activity android:name=".BasicSciences" />
+        <activity android:name=".AlliedEngineering" />
+        <activity android:name=".Admission" />
+        <activity android:name=".AcademicsActivity" />
+        <activity android:name=".AboutActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

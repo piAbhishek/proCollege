@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admission"
+    android:background="#BEFFF9">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="88dp"
+                android:layout_height="80dp"
+                android:id="@+id/cit_logo_admission"
+                android:src="@drawable/citlogo"
+                android:layout_marginTop="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/admission_heading"
+                android:text="CENTRAL INSTITUTE OF TECHNOLOGY KOKRAJHAR"
+                android:layout_toRightOf="@+id/cit_logo_admission"
+                android:textColor="@color/black"
+                android:layout_marginTop="13dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/admission_heading_description"
+                android:text="Deemed to be University under MoE, Govt. of India"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/admission_heading"
+                android:layout_toRightOf="@+id/cit_logo_admission"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BALAGAON, BODOLAND TERRITORIAL REGION, KOKRAJHAR
+                                    PO - RANGALIKHATA, ASSAM, INDIA - 783370"
+                android:textSize="10sp"
+                android:textColor="@color/black"
+                android:layout_toRightOf="@+id/cit_logo_admission"
+                android:layout_below="@+id/admission_heading_description"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/admission_heading_description_1"
+                android:text="WELCOME TO CIT KOKRAJHAR ADMISSION PORTAL                                      CITK 2021-22"
+                android:layout_below="@+id/cit_logo_admission"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/How_to_Apply"
+                android:text="How to Apply?"
+                android:layout_below="@+id/admission_heading_description_1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#0014FA"
+                android:textStyle="italic|bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/General_Instructions"
+                android:text="General Instructions"
+                android:layout_below="@+id/How_to_Apply"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/General_Instructions_description"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:textStyle="italic"
+                android:layout_below="@+id/General_Instructions"
+                android:text="1. All the aspiring candidates must apply online on the Admission Portal CITK-2021-22.
+                                                                                                     2. Candidates shall have to register clicking on the registration button. An authentication link shall be sent to the Mobile Number and E-mail ID used for registration. Candidates must click the link and log in using their E-mail ID, Mobile number ad Password.
+                                                                                                 3. Before going forward for filling the Application Form, the candidates must read the details of various programmes offered, intake capacity, eligibility criteria etc. and all the instructions.
+                                                                                        4. Candidates belonging to the reserved category such as SC/ST/OBC/PWD must have to upload the supporting Certificate of category.
+                                                                                              5. Candidates seeking admission through EWS quota should also upload a valid Certificate" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Application_Fee"
+                android:text="Application Fee"
+                android:layout_below="@+id/General_Instructions_description"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Application_Fee_description"
+                android:layout_below="@+id/Application_Fee"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/black"
+                android:text="For Diploma/B.Tech/B.Des: Rs1200/- (Rs.600 for SC/ST/PWD candidates)
+                                                                                                                 For M.Tech/M.Des/PHD: Rs 1500/- (Rs. 750 for SC/ST/PWD candidates)"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Programs"
+                android:id="@+id/programs"
+                android:layout_below="@+id/Application_Fee_description"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#0014FA"
+                android:textStyle="italic|bold"/>
+
+            <ImageView
+                android:id="@+id/diploma"
+                android:layout_width="match_parent"
+                android:layout_height="598dp"
+                android:layout_below="@+id/programs"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/diploma" />
+
+            <ImageView
+                android:id="@+id/ug"
+                android:layout_width="match_parent"
+                android:layout_height="710dp"
+                android:layout_below="@+id/diploma"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ug" />
+
+            <ImageView
+                android:id="@+id/bdes"
+                android:layout_width="401dp"
+                android:layout_height="462dp"
+                android:layout_below="@+id/ug"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/bdes" />
+
+            <ImageView
+                android:id="@+id/mtech"
+                android:layout_width="401dp"
+                android:layout_height="465dp"
+                android:layout_below="@+id/bdes"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mtech" />
+
+            <ImageView
+                android:id="@+id/mdes"
+                android:layout_width="401dp"
+                android:layout_height="418dp"
+                android:layout_below="@+id/mtech"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/mdes" />
+
+            <ImageView
+                android:id="@+id/phd"
+                android:layout_width="401dp"
+                android:layout_height="598dp"
+                android:layout_below="@+id/mdes"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/phd" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Important Dates"
+                android:id="@+id/dates"
+                android:layout_below="@+id/phd"
+                android:layout_marginLeft="20dp"
+                android:textColor="#0014FA"
+                android:textStyle="italic|bold"/>
+
+            <ImageView
+                android:id="@+id/imp_date"
+                android:layout_width="401dp"
+                android:layout_height="496dp"
+                android:layout_below="@+id/dates"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/imp_dates" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#BEFFF9">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivmain"
+                android:layout_width="wrap_content"
+                android:layout_height="259dp"
+                android:src="@drawable/cithome" />
+
+            <TextView
+                android:id="@+id/tvappname"
+                android:layout_below="@+id/ivmain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:text="proCollege"
+                android:textColor="#410000"
+                android:textSize="40dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvdescription"
+                android:layout_below="@+id/tvappname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The Socio-Academic App Of CIT"
+                android:textSize="20dp"
+                android:textStyle="bold|italic"
+                android:textColor="@color/black"
+                android:layout_marginBottom="30dp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_below="@+id/tvdescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="3dp"
+                android:text="WELCOME"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:textColor="@color/black"/>
+            <EditText
+                android:id="@+id/idEditUserName"
+                android:layout_below="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:hint="Enter UserName"
+                android:inputType="text" />
+            <EditText
+                android:id="@+id/idEditEmail"
+                android:layout_below="@+id/idEditUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:hint="Enter Email Address"
+                android:inputType="textEmailAddress"/>
+            <EditText
+                android:id="@+id/idEditPassword"
+                android:layout_below="@+id/idEditEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="@color/black"
+                android:hint="Enter Password"
+                android:inputType="textPassword"/>
+            <Button
+                android:id="@+id/idRegister"
+                android:layout_below="@+id/idEditPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Register User"
+                android:textAllCaps="false"
+                android:textStyle="bold"/>
+            <Button
+                android:id="@+id/existingUser"
+                android:layout_below="@+id/idRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Already a user ?"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

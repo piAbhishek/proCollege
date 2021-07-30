@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcademicsActivity"
+    android:background="#BEFFF9">
+
+    <TextView
+        android:id="@+id/tvacademics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ACADEMICS"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="#54FE7D"/>
+
+    <ImageView
+        android:id="@+id/ivacademics"
+        android:layout_below="@+id/tvacademics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/citportal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <Button
+        android:layout_below="@+id/syllabus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/notice"
+        android:text="Notice"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="3dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/syllabus"
+        android:layout_below="@+id/ivacademics"
+        android:text="Syllabus"
+        android:textStyle="bold"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="3dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/question_paper"
+        android:layout_below="@+id/notice"
+        android:text="Question Paper"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="3dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ref_books"
+        android:layout_below="@+id/question_paper"
+        android:text="Recommended Books"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="3dp"/>
+
+</RelativeLayout>

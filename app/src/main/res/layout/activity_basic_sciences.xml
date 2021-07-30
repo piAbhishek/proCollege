@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicSciences"
+    android:background="#BEFFF9">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#54FE7D"
+                android:text="Basic Sciences"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+            <TextView
+                android:id="@+id/dept_physics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="70dp"
+                android:text="1. Physics"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/deptphysics_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dept_physics"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="About"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                tools:ignore="HardcodedText"
+                android:id="@+id/deptdesign_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deptphysics_about"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Physics Department is a part of the Department of Basic Engineering Sciences. The department is for fulfilling the need of the basic knowledge of Physics and its applications for establishing the concepts for foundations of engineering courses. The courses under this department are part and parcel of the syllabus of the all engineering branches."/>
+            <Button
+                android:id="@+id/physics_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deptdesign_description"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="People" />
+            <TextView
+                android:id="@+id/dept_chemistry"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/physics_people"
+                android:text="2. Chemistry"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/deptchemistry_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dept_chemistry"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="About"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                tools:ignore="HardcodedText"
+                android:id="@+id/deptchemistry_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deptchemistry_about"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Chemistry is the subject which falls under basic science category. Generally engineering students used to study the subject on their early semesters. It is a very interesting subject. Although directly the subject seems to have less importance for the further engineering courses but the subject itself have lots of importance to gain knowledge in various engineering applications. The Department of chemistry is doing its job to give conceptual knowledge about the various application of this subject in various engineering applications."/>
+            <Button
+                android:id="@+id/chemistry_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deptchemistry_description"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="People" />
+            <TextView
+                android:id="@+id/dept_mathematics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/chemistry_people"
+                android:text="3. Mathematics"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/deptmathematics_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dept_mathematics"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="About"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                tools:ignore="HardcodedText"
+                android:id="@+id/deptmathematics_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deptmathematics_about"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="Mathematics is an indispensable subject in the study of science and technology. The importance of mathematics in engineering is known to everybody. Without having a sound knowledge of mathematics it is not possible to become a good engineer. The Department of Mathematics strives to instill a conceptual understanding of the subject which would go a long way in the study of their respective branches of engineering."/>
+            <Button
+                android:id="@+id/mathematics_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/deptchemistry_description"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="People" />
+            <TextView
+                android:id="@+id/dept_hu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/mathematics_people"
+                android:text="4.  Humanities and Social Sciences"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold|italic" />
+            <TextView
+                android:id="@+id/depthu_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dept_hu"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="15dp"
+                android:text="About"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+            <TextView
+                tools:ignore="HardcodedText"
+                android:id="@+id/depthu_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/depthu_about"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:text="The department of Humanities and Social Sciences at CIT Kokrajhar is a center for skill development, research and teaching composed of disciplines such as - English, Economics, Linguistics and Sociology. With each varied range of research interests and expertise, the department promotes inter-disiplinary work in Humanities and Social Sciences from diverse academic and cultural backgrounds.
+                The faculty of English trains engineering and design students of Diploma course, B. Tech and B. Des courses with an aim of improving their English communication skills (both written and spoken) along with other professional skills with the help of language lab and other advanched tools.
+                The faculty of Sociology guides students the professional ethics which are much required in professional domains.
+                The study of economics and management aims at improving students the managerial skills and making them to work towards the goal of technical application with greater productivity and lesser cost. The studies of economics also provide students with extensive technical knowledge of management and the ability to co-ordinate programme, plan, supervise and control a wide range of industries from an administrative point of view. Since the organizational activities includes planning, budgeting, managing etc. Therefore, to effectively and efficiently handle these activities of an organization, CIT has introduced economics as one of the subjects in the Diploma and Degree programmes.
+                The department is also actively involved in language development and linguistic researches in various capacities. So, workshops, seminars, conferences are organised time to time in collaboration with local institutions and international scholars on language, literature and culture."/>
+            <Button
+                android:id="@+id/hu_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/depthu_description"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="People"
+                android:layout_marginBottom="30dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
